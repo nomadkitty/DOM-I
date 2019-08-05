@@ -50,9 +50,12 @@ navItem[4].textContent = siteContent.nav["nav-item-5"];
 navItem[5].textContent = siteContent.nav["nav-item-6"];
 navItem.forEach(items => {items.style.color = 'green';});
 
+let ctaArray = siteContent.cta.h1.split(' ').join('\n');
 let ctaH1 = document.querySelector('.cta-text h1');
-ctaH1.textContent = siteContent.cta.h1;
+ctaH1.innerText = ctaArray;
 ctaH1.style.color = "green";
+
+
 
 let ctaBtn = document.querySelector('.cta-text button');
 ctaBtn.textContent = siteContent.cta.button;
