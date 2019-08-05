@@ -90,8 +90,12 @@ let contactH4 = document.querySelector('.contact h4');
 contactH4.textContent = siteContent.contact["contact-h4"];
 contactH4.style.color = 'green';
 
+// siteContent.contact.address.split(' ');
+// siteContent.contact.address.splice(3,0, '<br>');
 let contactP = document.querySelectorAll('.contact p');
-contactP[0].textContent = siteContent.contact.address;
+contactP[0].textContent = siteContent.contact.address; 
+contactP[0].style.width = '20%';
+// contactP[0].style.wordBreak = 'normal';
 contactP[1].textContent = siteContent.contact.phone;
 contactP[2].textContent = siteContent.contact.email;
 
